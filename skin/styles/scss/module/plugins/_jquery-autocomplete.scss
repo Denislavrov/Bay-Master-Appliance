@@ -1,0 +1,59 @@
+.xdsoft_autocomplete{
+	position: relative;
+	display: inline;
+	width: 100% !important;
+	text-align: start;
+	text-transform: none;
+	text-indent: 0;
+	text-shadow: none;
+	word-spacing: normal;
+}
+
+.xdsoft_autocomplete .xdsoft_input{
+	position: relative;
+	z-index: 2;
+}
+
+.xdsoft_autocomplete .xdsoft_autocomplete_dropdown {
+	position: absolute;
+	display: none;
+	min-width: 100%;
+	margin-top: -1px;
+	padding: 10px 0;
+	background-color: white;
+	border: 1px solid $border-gray-color;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	cursor: default;
+	z-index: 1001;
+	overflow: auto;
+}
+
+.xdsoft_autocomplete .xdsoft_autocomplete_hint {
+	position: absolute;
+	color: #ccc !important;
+	white-space: pre  !important;
+	z-index: 1;
+	overflow: hidden !important;
+}
+
+.xdsoft_autocomplete .xdsoft_autocomplete_hint span{
+	color: transparent;
+	opacity: 0.0;
+}
+
+.xdsoft_autocomplete .xdsoft_autocomplete_dropdown > .xdsoft_autocomplete_copyright {
+	display: none;
+}
+
+.xdsoft_autocomplete .xdsoft_autocomplete_dropdown > div{
+	padding: 5px 0 5px 0;
+	line-height: 1.6;
+	white-space: nowrap;
+	background-color: white;
+	cursor: pointer;
+}
+
+.xdsoft_autocomplete .xdsoft_autocomplete_dropdown > div.active{
+	color: white;
+	background-color: rgba($primary-color, 0.9);
+}

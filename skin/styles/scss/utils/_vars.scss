@@ -1,0 +1,59 @@
+//** Colors
+$base-color: #6B6B6B;
+$base-color-dark: #333;
+$base-color-light: #888;
+$base-color-lighter: #909090;
+$primary-color: #314ab4;
+$primary-color-blur: #939FD4;
+$secondary-color: #DC2041;
+$attention-color: #D93250;
+$success-color: #80C824;
+$bg-color: #F9F9F9;
+$gray-color: #A4A4A4;
+$gray-color-light: #C6C6C6;
+$gray-color-lighter: #F1F1F1;
+$dark-color: #1a1a1a;
+$dark-color-light: #2C2C33;
+$light-color: white;
+$border-gray-color: #E4E4E4;
+$black: #000;
+$bg-mobile-menu: #FAFAFA;
+
+//** Body
+$gutter: 30px;
+$body-bg: $bg-color;
+$border-radius-base: 10px;
+$text-color: $base-color;
+
+//** Links
+$link-color: $primary-color !default;
+$link-hover-color: $primary-color !default;
+$link-decoration: none !default;
+$link-hover-decoration: underline !default;
+
+//** Typography
+$font-family-base: Gilroy, Arial, sans-serif !default;
+$font-size-base: 18px !default;
+
+//** Buttons
+$btn-border-width: 2px;
+$btn-font-size: 16px !default;
+$btn-height: 60px;
+$btn-padding: 0 $gutter;
+
+
+//** Forms
+$input-bg-color: #fff;
+$input-border-width: 2px;
+$input-border-color: #EBEBEB;
+$input-height: 60px;
+$input-padding: 0 25px;
+$textarea-height: 150px;
+$input-placeholder-color: #919191;
+$input-checkbox-size: 20px;
+
+//** Tables
+$th-bg-color: $bg-color;
+$td-bg-color: transparent;
+$td-brd-color: $bg-color;
+$td-padding: $gutter/2 $gutter;

@@ -1,0 +1,20 @@
+.breadcrumbs {
+  color: $base-color-light;
+  font-weight: 600;
+
+  &__item {
+    color: $primary-color;
+
+    &:not(:last-child) {
+      &::after {
+        content: "→";
+        font-weight: 400;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  &__link {
+    color: $primary-color-blur;
+  }
+}
