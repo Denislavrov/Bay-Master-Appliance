@@ -31,7 +31,7 @@
 
 .layout-main {
   margin: 0 auto;
-  max-width: 1240px;
+  max-width: 1200px;
   padding: 0 20px;
 
   @include media(1260px) {
@@ -39,7 +39,7 @@
   }
 
   @include laptop {
-    padding: 0 35px;
+    padding: 0 40px;
   }
 
   @include phones {
