@@ -1,33 +1,23 @@
 //** Colors
 $mainRed: #A63A42;
+$redButtonHover: #DB333F;
 $mainTitle: #333;
 $mainText: #717171;
 $reviewText: #6B6B6B;
 $reviewButton: #989898;
 $lightGrey: #EFEFEF;
-$lightBg: #F9F9F9;
-
-//** Body
-$gutter: 30px;
-$body-bg: $bg-color;
-$border-radius-base: 10px;
-$text-color: $base-color;
-
-//** Links
-$link-color: $primary-color !default;
-$link-hover-color: $primary-color !default;
-$link-decoration: none !default;
-$link-hover-decoration: underline !default;
+$lightBg: #f9f9f9;
 
 //** Typography
-$font-family-base: Gilroy, Arial, sans-serif !default;
+$font-family-base: Outfit, Arial, sans-serif !default;
+$font-family-title: Thunder, Arial, sans-serif;
 $font-size-base: 18px !default;
 
 //** Buttons
 $btn-border-width: 2px;
 $btn-font-size: 16px !default;
 $btn-height: 60px;
-$btn-padding: 0 $gutter;
+
 
 
 //** Forms
@@ -41,7 +31,3 @@ $input-placeholder-color: #919191;
 $input-checkbox-size: 20px;
 
 //** Tables
-$th-bg-color: $bg-color;
-$td-bg-color: transparent;
-$td-brd-color: $bg-color;
-$td-padding: $gutter/2 $gutter;

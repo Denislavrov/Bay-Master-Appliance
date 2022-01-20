@@ -1,0 +1,42 @@
+.service-main {
+  width: 100%;
+  background: url("/skin/images/pngegg 1.png") no-repeat 90%,
+  url("/skin/images/Rectangle 964.png") no-repeat 100%,
+  $lightBg;
+}
+
+.service-block {
+  padding-top: 214px;
+  width: 50%;
+}
+
+.service-title {
+  font-family: $font-family-title;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 60px;
+  color: $mainRed;
+}
+
+.service-text {
+  max-width: 84%;
+  padding-top: 33px;
+  font-family: $font-family-base;
+  font-weight: 400;
+  color: $mainTitle;
+}
+
+.service-button-block {
+  padding: 70px 0 129px;
+}
+
+.service-button {
+  @include btn();
+  padding: 16px 51px;
+  font-size: 20px;
+}
+
+.service-link {
+  @include btn-link();
+  margin-left: 56px;
+}

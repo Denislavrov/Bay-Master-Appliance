@@ -1,63 +1,23 @@
-.btn,
-.btn-inverse {
-  &:disabled {
-    background-color: $gray-color-lighter;
-    cursor: not-allowed;
+@mixin btn {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  background: $mainRed;
+  cursor: pointer;
+  border: none;
 
-    &:hover {
-      background-color: $gray-color-lighter;
-    }
+  &:hover {
+    background: $redButtonHover;
   }
 }
 
-.btn {
-  @extend %btn;
+@mixin btn-link {
+  font-weight: 400;
+  font-size: 20px;
+  color: $mainRed;
+  text-decoration: none;
 
-  &_base {
-    @include btn-theme($light-color, $base-color);
-  }
-
-  &_primary {
-    @include btn-theme($light-color, $primary-color);
-  }
-
-  &_secondary {
-    @include btn-theme($light-color, $secondary-color);
-  }
-
-  &_attention {
-    @include btn-theme($light-color, $attention-color);
-  }
-
-  &_success {
-    @include btn-theme($light-color, $success-color);
-  }
-
-  &_h {
-    &-50 {
-      height: 50px;
-      line-height: 50px;
-    }
-  }
-}
-
-.btn-inverse {
-  @extend %btn;
-
-  &_base {
-    @include btn-inverse-theme($light-color, $base-color);
-    border-color: white;
-  }
-
-  &_primary {
-    @include btn-inverse-theme($light-color, $primary-color);
-  }
-
-  &_secondary {
-    @include btn-inverse-theme($light-color, $secondary-color);
-  }
-
-  &_attention {
-    @include btn-inverse-theme($light-color, $attention-color);
+  &:hover {
+    color: $redButtonHover;
   }
 }
