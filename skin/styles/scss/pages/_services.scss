@@ -3,11 +3,54 @@
   background: url("/skin/images/pngegg 1.png") no-repeat 90%,
   url("/skin/images/Rectangle 964.png") no-repeat 100%,
   $lightBg;
+  @include media(1160px) {
+    background: url("/skin/images/pngegg 1.png") no-repeat 169%,
+    url("/skin/images/Rectangle 964.png") no-repeat 220%,
+    $lightBg;
+  }
+
+  @include media(960px) {
+    background: url("/skin/images/pngegg 1.png") no-repeat 190%,
+    url("/skin/images/Rectangle 1066.png") no-repeat 100%,
+    $lightBg;
+  }
+
+  @include media(820px) {
+    background: url("/skin/images/pngegg 1.png") no-repeat 280%,
+    url("/skin/images/Rectangle 1066.png") no-repeat 100%,
+    $lightBg;
+  }
+
+  @include media(820px) {
+    background: url("/skin/images/pngegg 1.png") no-repeat 280%,
+    url("/skin/images/Rectangle 1066.png") no-repeat 100%,
+    $lightBg;
+  }
+
+  @include media(780px) {
+    background: url("/skin/images/pngegg 1.png") no-repeat 340%,
+    url("/skin/images/Rectangle 1066.png") no-repeat 100%,
+    $lightBg;
+  }
+
+  @include media(767px) {
+    background: url("/skin/images/Rectangle 1076.png") no-repeat 0 100%,
+    url("/skin/images/modern-kitchen-interior-with-furniture-stylish-kitchen-interior-with-yellow-wall-3d-rendering 1.png") no-repeat 100%;
+
+    background-size: 83%, cover;
+  }
 }
 
 .service-block {
   padding-top: 214px;
   width: 50%;
+  @include media(1060px) {
+    width: 70%;
+  }
+  @include media(767px) {
+    width: 80%;
+    padding-top: 145px;
+  }
 }
 
 .service-title {
@@ -16,6 +59,16 @@
   font-weight: 700;
   line-height: 60px;
   color: $mainRed;
+  @include media(1160px) {
+    font-size: 52px;
+    width: 80%;
+  }
+  @include media(767px) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 20px;
+    width: 85%;
+  }
 }
 
 .service-text {
@@ -24,19 +77,50 @@
   font-family: $font-family-base;
   font-weight: 400;
   color: $mainTitle;
+  @include media(1160px) {
+    font-size: 16px;
+    width: 100%;
+  }
+  @include media(900px) {
+    font-size: 16px;
+    width: 80%;
+  }
+  @include media(767px) {
+    padding-top: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 20px;
+    width: 100%;
+  }
 }
 
 .service-button-block {
   padding: 70px 0 129px;
+  @include media(1160px) {
+    padding: 56px 0 70px;
+  }
+  @include media(767px) {
+    padding: 50px 0 59px;
+  }
 }
 
 .service-button {
   @include btn();
   padding: 16px 51px;
   font-size: 20px;
+
+  @include media(767px) {
+    margin-left: 20px;
+  }
 }
 
 .service-link {
   @include btn-link();
   margin-left: 56px;
+
+  @include media(767px) {
+    margin-left: 20px;
+    margin-top: 40px;
+    display: block;
+  }
 }
