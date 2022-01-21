@@ -23,3 +23,17 @@ function toggleForm() {
         div.style.display = 'none';
     }
 }
+
+
+function toggleAboutBlock() {
+    const block = document.querySelector('.js-about-toggle');
+    const button = document.querySelector('.js-about-button');
+    if (block.style.maxHeight === '0px' &&  (!button.style.background || button.style.background === 'rgb(249, 249, 249)')) {
+        block.style.maxHeight = '100%';
+        button.style.background = '#D8D8D8';
+        block.scrollIntoView({block: 'start', behavior: "smooth"});
+    } else {
+        block.style.maxHeight = '0px';
+        button.style.background = '#F9F9F9';
+    }
+}
