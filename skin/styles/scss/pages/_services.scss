@@ -34,10 +34,10 @@
   }
 
   @include media(767px) {
-    background: url("/skin/images/Rectangle 1076.png") no-repeat 0 100%,
+    background: url("/skin/images/Rectangle 1076.png") no-repeat -42% 100%,
     url("/skin/images/modern-kitchen-interior-with-furniture-stylish-kitchen-interior-with-yellow-wall-3d-rendering 1.png") no-repeat 100%;
 
-    background-size: 83%, cover;
+    background-size: 90%, cover;
   }
 }
 
@@ -123,4 +123,438 @@
     margin-top: 40px;
     display: block;
   }
+}
+
+//repair
+
+.service-repair {
+  padding: 74px 0 80px;
+
+  @include media(1100px) {
+    padding: 74px 0 60px;
+  }
+  @include media(767px) {
+    padding: 41px 0 50px;
+  }
+}
+
+.service-repair-title {
+  font-family: $font-family-title;
+  font-size: 56px;
+  font-weight: 700;
+  color: $mainTitle;
+  text-align: center;
+
+  @include media(1100px) {
+    font-size: 52px;
+  }
+  @include media(767px) {
+    font-size: 36px;
+  }
+}
+
+.service-repair-text {
+  font-family: $font-family-base;
+  font-weight: 500;
+  color: $mainText;
+  margin: 25px auto 0;
+  max-width: 460px;
+  text-align: center;
+
+  @include media(1100px) {
+    font-size: 16px;
+  }
+  @include media(767px) {
+    font-size: 14px;
+  }
+}
+
+.repair-wrap {
+  margin-top: 65px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.repair-item {
+  width: 22%;
+  margin-right: 29px;
+  margin-bottom: 25px;
+  background: $lightBg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+
+  &:nth-child(4n + 4){
+    margin-right: 0;
+  }
+
+  @include media(1100px) {
+    width: 30%;
+
+    &:nth-child(4n + 4){
+      margin-right: 29px;
+    }
+    &:nth-child(3n + 3){
+      margin-right: 0;
+    }
+  }
+
+  @include media(860px) {
+    width: 45%;
+    &:nth-child(4n + 4){
+      margin-right: 29px;
+    }
+    &:nth-child(3n + 3){
+      margin-right: 29px;
+    }
+    &:nth-child(2n + 2){
+      margin-right: 0px;
+    }
+  }
+
+  &:hover {
+      background: $mainRed;
+  }
+
+  &:hover .repair-item-title {
+    color: #fff;
+  }
+}
+
+.repair-item-title {
+  margin-top: 40px;
+  text-align: center;
+  font-family: $font-family-title;
+  font-weight: 700;
+  font-size: 24px;
+
+  @include media(767px) {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+}
+
+.repair-item-img-block {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.repair-item-img {
+  display: block;
+  width: 100%;
+
+  @include media(767px) {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+//how-work
+
+.services-how-work {
+  background: $lightBg;
+  padding: 80px 0;
+}
+
+.services-how-work-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include media(900px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @include media(768px) {
+    align-items: center;
+  }
+}
+
+.services-how-work-title {
+  font-family: $font-family-title;
+  font-size: 56px;
+  color: $mainTitle;
+  font-weight: 700;
+
+  @include media(900px) {
+    font-size: 52px;
+  }
+}
+
+.services-how-work-text {
+  font-family: $font-family-base;
+  font-size: 18px;
+  font-weight: 500;
+  color: $mainText;
+
+  @include media(900px) {
+    font-size: 16px;
+    margin-top: 25px;
+  }
+
+  @include media(767px) {
+    text-align: center;
+  }
+}
+
+.services-how-work-options {
+  margin-top: 53px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include media(840px){
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+
+.services-how-work-option {
+  width: 48%;
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+
+  &:nth-child(2n + 2) {
+    margin-right: 0;
+  }
+
+  @include media(840px){
+   width: 100%;
+  }
+}
+
+.services-how-work-img-block {
+  background: $lightGrey;
+  height: 130px;
+  min-width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include media(1137px) {
+    height: 150px;
+    min-width: 60px;
+  }
+}
+
+.services-how-work-text-block {
+  background: #fff;
+  min-height: 130px;
+  height: 130px;
+  padding: 0 60px;
+
+  @include media(1137px) {
+    height: 150px;
+  }
+
+  @include media(767px) {
+    padding: 0 25px;
+  }
+}
+
+.services-how-work-option-title {
+  color: $mainTitle;
+  padding-top: 25px;
+}
+
+.services-how-work-option-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: $mainText;
+  padding-top: 15px;
+}
+
+//form
+
+.main-form {
+  display: flex;
+  background: #fff;
+
+  @include media(870px) {
+    justify-content: center;
+    background: transparent;
+  }
+}
+.form-left {
+  background: url("/skin/images/Rectangle 982.png") no-repeat 100%;
+  padding: 50px 92px 50px 80px;
+  min-width: calc(600px - 92px - 80px);
+  background-size: cover;
+  position: relative;
+
+  @include media(1100px) {
+    padding: 50px 30px 50px 30px;
+  }
+  @include media(870px) {
+    display: none;
+  }
+}
+.main-form-title {
+  font-family: $font-family-title;
+  font-weight: 700;
+  font-size: 44px;
+  color: $mainRed;
+  line-height: 70px;
+}
+
+.main-form-text {
+  margin-top: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: $mainText;
+}
+
+.main-form-checkbox-block {
+  color: #6B6B6B;
+  font-weight: 400;
+  font-size: 14px;
+  position: absolute;
+  bottom: 50px;
+}
+
+.main-form-checkbox {
+  margin-right: 21px;
+  display: none;
+
+  & + label {
+    display: inline-block;
+    position: relative;
+    vertical-align: baseline;
+    line-height: 2;
+    font-size: 14px;
+    cursor: pointer;
+    padding-left: 30px;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      box-shadow: inset 0 0 0 1px #DDD;
+    }
+  }
+
+  &:checked + label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    background: $mainRed;
+  }
+}
+
+.form-right {
+  padding: 70px 80px 70px 110px;
+  @include media(1280px) {
+    padding: 70px 30px 70px 30px;
+  }
+  @include media(870px) {
+    background: url("/skin/images/Rectangle 982.png") no-repeat 100%;
+    background-size: cover;
+    padding: 41px 130px 100px;
+    position: relative;
+  }
+
+  @include media(767px) {
+    background: url("/skin/images/Rectangle 982.png") no-repeat 91%;
+    background-size: cover;
+    padding: 30px 30px 120px;
+  }
+
+  & .main-form-title {
+    display: none;
+
+    @include media(870px) {
+      display: block;
+    }
+    @include media(767px) {
+      font-size: 36px;
+      line-height: 50px;
+    }
+
+  }
+
+  & .main-form-text {
+      display: none;
+
+      @include media(870px) {
+        display: block;
+        margin-bottom: 50px;
+      }
+      @include media(767px) {
+        margin-bottom: 25px;
+        font-size: 14px;
+        line-height: 22px;
+      }
+  }
+
+  & .main-form-checkbox-block {
+      display: none;
+
+      @include media(870px) {
+        display: block;
+      }
+  }
+}
+
+.main-form-line {
+  display: flex;
+  justify-content: space-between;
+
+  @include media(767px) {
+    flex-direction: column;
+  }
+}
+
+.main-form-input,
+.main-form-button {
+  width: 100%;
+  box-sizing: border-box;
+  background: $lightBg;
+  padding: 18px 25px;
+  margin-top: 10px;
+  border: none;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &._small {
+    width: 49%;
+    &:first-child {
+      margin-top: 10px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include media(767px) {
+      width: 100%;
+    }
+  }
+}
+
+.main-form-button {
+  @include btn();
+
+  @include media(870px) {
+    &:hover {
+      background: $mainRed;
+    }
+  }
+}
+
+.main-form-subwrap {
+  display: none;
 }

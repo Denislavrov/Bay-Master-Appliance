@@ -11,3 +11,15 @@ function toggleMenu() {
         menu.style.transform = 'translateY(0px)';
     }
 }
+
+
+function toggleForm() {
+    const div = document.querySelector('.js-form-hideWrap');
+    const check = document.querySelector('.js-check-more');
+    const checkMob = document.querySelector('.js-check-more-mobile');
+    if (check.checked || checkMob.checked) {
+        div.style.display = 'block';
+    } else {
+        div.style.display = 'none';
+    }
+}
