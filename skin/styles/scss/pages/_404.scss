@@ -1,0 +1,77 @@
+.service-main._404-error {
+  width: 100%;
+  background: url("/skin/images/404404.png") no-repeat 70%,
+  url("/skin/images/Rectangle 964.png") no-repeat 100%,
+  $lightBg;
+  @include media(1200px) {
+    background: url("/skin/images/404404.png") no-repeat 80%,
+    url("/skin/images/Rectangle 964.png") no-repeat 220%,
+    $lightBg;
+  }
+
+  @include media(1060px) {
+    background: url("/skin/images/404.png") no-repeat 80%,
+    url("/skin/images/Rectangle 964.png") no-repeat 220%,
+    $lightBg;
+  }
+
+  @include media(960px) {
+    background: url("/skin/images/404.png") no-repeat 90%,
+    url("/skin/images/Rectangle 1066.png") no-repeat 100%,
+    $lightBg;
+  }
+
+  @include media(820px) {
+    background: url("/skin/images/404.png") no-repeat 90%,
+    url("/skin/images/Rectangle 1066.png") no-repeat 100%,
+    $lightBg;
+  }
+
+  @include media(780px) {
+    background: url("/skin/images/404.png") no-repeat 90%,
+    url("/skin/images/Rectangle 1066.png") no-repeat 100%,
+    $lightBg;
+  }
+
+  @include media(767px) {
+    background: $lightBg;
+  }
+}
+
+.service-main._404-error .service-img-404 {
+  display: none;
+  @include media(767px) {
+    display: block;
+    max-width: 167px;
+    margin-bottom: 100px;
+  }
+}
+
+.service-main._404-error .service-block {
+  width: 50%;
+  @include media(767px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.service-main._404-error .service-title {
+  color: $mainTitle;
+  @include media(767px) {
+    padding-left: 0;
+  }
+}
+
+.service-main._404-error .service-text {
+  @include media(767px) {
+    padding-left: 0;
+  }
+}
+
+.service-main._404-error .service-button {
+  @include media(767px) {
+    margin-left: 0;
+  }
+}

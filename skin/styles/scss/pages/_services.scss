@@ -545,6 +545,30 @@
   }
 }
 
+.main-form select.main-form-input {
+  color: $mainText;
+  appearance: none;
+  width: 100%;
+}
+
+.form-select-wrap {
+  position: relative;
+  display: inline-block;
+  width: 49%;
+  @include media(767px) {
+    width: 100%;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 10px;
+    background: url('/skin/images/Polygon 5tr.svg') no-repeat;
+    right: 10px;
+    top: 50%;
+  }
+}
+
 .main-form-button {
   @include btn();
 
