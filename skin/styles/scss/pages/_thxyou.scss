@@ -1,0 +1,32 @@
+.service-main._thxYou {
+  width: 100%;
+  background: $lightBg;
+}
+
+.service-main._thxYou .service-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.service-main._thxYou .service-title {
+  color: $mainTitle;
+  padding-left: 0;
+}
+
+.service-main._thxYou .service-text {
+  padding-left: 0;
+}
+
+.service-main._thxYou .service-button {
+  margin-left: 0;
+  display: block;
+  text-decoration: none;
+  @include media(900px) {
+    margin-bottom: 100px;
+  }
+  @include media(767px) {
+    margin-bottom: 167px;
+  }
+}
