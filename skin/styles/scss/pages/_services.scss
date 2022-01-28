@@ -95,6 +95,7 @@
 }
 
 .service-button-block {
+  font-family: $font-family-thunder;
   padding: 70px 0 129px;
   @include media(1160px) {
     padding: 56px 0 70px;
@@ -380,7 +381,7 @@
   }
 }
 .form-left {
-  background: url("/skin/images/Rectangle 982.png") no-repeat 100%;
+  background: url("/skin/images/Group 1048.png") no-repeat 100%;
   padding: 50px 92px 50px 80px;
   min-width: calc(600px - 92px - 80px);
   background-size: cover;
@@ -632,6 +633,7 @@
 }
 
 .about-title {
+  font-family: $font-family-title;
   font-size: 56px;
   color: $mainTitle;
   font-weight: 700;
@@ -819,6 +821,7 @@
 
 .review-button {
   @include btn();
+  font-family: $font-family-thunder;
   padding: 35px 96px;
   font-size: 20px;
   @include media(1140px) {
@@ -833,7 +836,7 @@
 .review-wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 18px;
   @include media(767px) {
     flex-wrap: nowrap;
@@ -844,7 +847,7 @@
 }
 
 .review-item {
-  width: 39%;
+  width: 490px;
   background: #fff;
   margin-right: 40px;
   margin-top: 40px;

@@ -26,10 +26,10 @@ include($_SERVER['DOCUMENT_ROOT'] . "/html/templates/main/header.tpl.php");
             <div class="about-text">We serve all major appliance types and brands and are prepared for all kinds of issues. Our technicians are trained and experienced. We use the best equipment accurate diagnostic and quick repair. Our team is happy to serve our neighbors in the Bay Area.</div>
             <div class="about-wrap _about">
                 <div class="about-item">Same-day appointments and service</div>
-                <div class="about-item">Diagnostic Free with repair</div>
-                <div class="about-item">Floor and interior protection equipment</div>
                 <div class="about-item">COVID-19 prepared: masks, gloves and shoe covers</div>
+                <div class="about-item">Diagnostic Free with repair</div>
                 <div class="about-item">Warranty up to 1 year</div>
+                <div class="about-item">Floor and interior protection equipment</div>
                 <div class="about-item">Most common parts on hand</div>
             </div>
         </div>
@@ -160,36 +160,35 @@ include($_SERVER['DOCUMENT_ROOT'] . "/html/templates/main/header.tpl.php");
              </div>
          </form>-->
     </div>
-</section>
-<section class="about-form">
-    <div class="layout-main">
-        <form action="" class="main-form">
-            <div class="form-left">
-                <div class="main-form-title">Leave your application right now</div>
-                <div class="main-form-text">Complete the form, and we'll call you back soon</div>
-                <div class="main-form-checkbox-block">
-                    <input type="checkbox" class="main-form-checkbox js-check-more" id="check-more"
-                           onchange="toggleForm()">
-                    <label for="check-more">Additional Information</label>
+    <section class="about-form">
+        <div class="layout-main">
+            <form action="" class="main-form">
+                <div class="form-left">
+                    <div class="main-form-title">Leave your application right now</div>
+                    <div class="main-form-text">Complete the form, and we'll call you back soon</div>
+                    <div class="main-form-checkbox-block">
+                        <input type="checkbox" class="main-form-checkbox js-check-more" id="check-more"
+                               onchange="toggleForm()">
+                        <label for="check-more">Additional Information</label>
+                    </div>
                 </div>
-            </div>
-            <div class="form-right">
-                <div class="main-form-title">Leave your application right now</div>
-                <div class="main-form-text">Complete the form, and we'll call you back soon</div>
-                <input class="main-form-input" type="text" placeholder="Name*"/>
-                <input class="main-form-input" type="text" placeholder="Phone number*"/>
-                <div class="main-form-subwrap js-form-hideWrap">
-                    <div class="main-form-line">
-                        <input class="main-form-input _small" type="text" placeholder="Zip*"/>
-                        <span class="form-select-wrap">
+                <div class="form-right">
+                    <div class="main-form-title">Leave your application right now</div>
+                    <div class="main-form-text">Complete the form, and we'll call you back soon</div>
+                    <input class="main-form-input" type="text" placeholder="Name*"/>
+                    <input class="main-form-input" type="text" placeholder="Phone number*"/>
+                    <div class="main-form-subwrap js-form-hideWrap">
+                        <div class="main-form-line">
+                            <input class="main-form-input _small" type="text" placeholder="Zip*"/>
+                            <span class="form-select-wrap">
                             <select class="main-form-input _small" type="text" placeholder="Type of appliance">
                                 <option>test1</option>
                                 <option>test2</option>
                                 <option>test3</option>
                             </select>
                         </span>
-                    </div>
-                    <div class="main-form-line">
+                        </div>
+                        <div class="main-form-line">
                         <span class="form-select-wrap">
                             <select class="main-form-input _small" type="text" placeholder="Select brand">
                                 <option>test1</option>
@@ -197,19 +196,20 @@ include($_SERVER['DOCUMENT_ROOT'] . "/html/templates/main/header.tpl.php");
                                 <option>test3</option>
                             </select>
                         </span>
-                        <input class="main-form-input _small" type="text" placeholder="Email"/>
+                            <input class="main-form-input _small" type="text" placeholder="Email"/>
+                        </div>
+                        <textarea class="main-form-input" type="text" placeholder="Message"></textarea>
                     </div>
-                    <textarea class="main-form-input" type="text" placeholder="Message"></textarea>
+                    <input type="submit" class="main-form-button" title="Get FREE diagnostic" value="Get FREE diagnostic"/>
+                    <div class="main-form-checkbox-block">
+                        <input type="checkbox" class="main-form-checkbox js-check-more-mobile" id="check-more-mobile"
+                               onchange="toggleForm()">
+                        <label for="check-more-mobile">Additional Information</label>
+                    </div>
                 </div>
-                <input type="submit" class="main-form-button" title="Get FREE diagnostic" value="Get FREE diagnostic"/>
-                <div class="main-form-checkbox-block">
-                    <input type="checkbox" class="main-form-checkbox js-check-more-mobile" id="check-more-mobile"
-                           onchange="toggleForm()">
-                    <label for="check-more-mobile">Additional Information</label>
-                </div>
-            </div>
-        </form>
-    </div>
+            </form>
+        </div>
+    </section>
 </section>
 
 <?php

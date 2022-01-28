@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 39px 0 20px;
-  font-family: $font-family-title;
+  font-family: $font-family-thunder;
 }
 
 .header-content {
@@ -28,7 +28,7 @@
 }
 
 .header-phone {
-  margin-left: 120px;
+  margin-left: 103px;
   margin-right: 62px;
   font-weight: 600;
   font-size: 24px;
@@ -104,7 +104,7 @@
 }
 
 .header-submenu {
-  transition: opacity 1s ease;
+  transition: opacity 200ms ease;
   opacity: 0;
   position: absolute;
   pointer-events: none;
@@ -145,7 +145,7 @@
 
 .header-submenu__link {
   text-decoration: none;
-  font-family: $font-family-title;
+  font-family: $font-family-thunder;
   line-height: 16px;
   color: $mainTitle;
   cursor: pointer;
