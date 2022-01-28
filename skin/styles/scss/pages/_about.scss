@@ -1,0 +1,166 @@
+.service-main._about {
+  width: 100%;
+  background: url("/skin/images/Group 588.png") no-repeat 82%,
+  url("/skin/images/Rectangle 964.png") no-repeat 100%,
+  $lightBg;
+  @include media(1200px) {
+    background: url("/skin/images/Group 588.png") no-repeat 95%,
+    url("/skin/images/Rectangle 964.png") no-repeat 220%,
+    $lightBg;
+  }
+
+  @include media(1060px) {
+    background: url("/skin/images/Group 886.png") no-repeat 94%,
+    url("/skin/images/Rectangle 1066.png") no-repeat 100%,
+    $lightBg;
+  }
+
+  @include media(960px) {
+    background: url("/skin/images/Group 886.png") no-repeat 90%,
+    url("/skin/images/Rectangle 1066.png") no-repeat 100%,
+    $lightBg;
+  }
+
+  @include media(820px) {
+    background: url("/skin/images/Group 886.png") no-repeat 90%,
+    url("/skin/images/Rectangle 1066.png") no-repeat 100%,
+    $lightBg;
+  }
+
+  @include media(780px) {
+    background: url("/skin/images/Group 886.png") no-repeat 90%,
+    url("/skin/images/Rectangle 1066.png") no-repeat 100%,
+    $lightBg;
+  }
+
+  @include media(767px) {
+      background: url("/skin/images/Rectangle 1076.png") no-repeat -42% 100%,
+      url("/skin/images/modern-kitchen-interior.png") no-repeat 100%;
+      background-size: 90%, cover;
+  }
+}
+
+.service-main._about .service-title {
+  color: $mainTitle;
+}
+
+.service-main._about .service-button {
+  @include media(767px) {
+    padding: 16px 25px;
+  }
+}
+
+.about {
+  padding: 70px 0 50px;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  @include media(1090px) {
+    flex-direction: column;
+  }
+}
+
+.about-left._about,
+.about-right._about {
+  width: 43%;
+  @include media(1090px) {
+    max-width: 100%;
+    width: 100%;
+  }
+  & .about-text {
+    margin-top: 12px;
+  }
+}
+
+.about .about-right._about {
+  @include media(1090px) {
+    margin-top: 20px;
+  }
+}
+
+.about-wrap._about {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  & .about-item {
+    padding: 0 30px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 19px;
+
+    @include media(767px) {
+      width: 30%;
+    }
+  }
+}
+
+.about-slider {
+  position: relative;
+  @include media(1090px) {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 580px;
+    & img {
+      width: 100%;
+    }
+  }
+
+  @include media(767px) {
+    margin-top: 0px;
+  }
+
+
+}
+
+.about-slider__prev,
+.about-slider__next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  top: calc(50% - 25px);
+  cursor: pointer;
+  background: $mainRed;
+  &:hover {
+    background: $redButtonHover;
+  }
+}
+
+.about-slider__prev {
+  left: 40px;
+  @include media(1090px) {
+    left: 10px;
+  }
+}
+
+.about-slider__next {
+  right: 40px;
+  @include media(1090px) {
+    right: 10px;
+  }
+}
+
+.about-form {
+  background: $lightBg;
+  padding: 0 0 80px;
+  @include media(1060px) {
+    padding: 0 0 50px;
+  }
+  @include media(767px) {
+    padding: 0 0 50px;
+  }
+}

@@ -1,0 +1,55 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 320px;
+  overflow: hidden;
+  position: relative;
+}
+
+.layout-main {
+  font-family: $font-family-base;
+  font-size: 18px;
+  line-height: 23px;
+}
+.main-center {
+  flex: 1 0 auto;
+  background-color: white;
+
+  &:not(.full-height) {
+    padding: 115px 0 65px;
+
+    @include laptop {
+      padding: 70px 0;
+    }
+  }
+
+  @include tablets {
+  }
+}
+
+.main-content {
+  padding: 60px 0 75px;
+}
+
+.layout-main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 120px;
+
+  @include media(1260px) {
+    padding: 0 60px;
+  }
+
+  @include laptop {
+    padding: 0 40px;
+  }
+
+  @include phones {
+    padding: 0 12px;
+  }
+
+  @include phones() {
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,23 @@
+@mixin btn {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  background: $mainRed;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background: $redButtonHover;
+  }
+}
+
+@mixin btn-link {
+  font-weight: 400;
+  font-size: 20px;
+  color: $mainRed;
+  text-decoration: none;
+
+  &:hover {
+    color: $redButtonHover;
+  }
+}

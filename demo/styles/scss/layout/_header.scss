@@ -1,0 +1,259 @@
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 39px 0 20px;
+  font-family: $font-family-title;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-link {
+  & img {
+    @include media(767px) {
+      max-width: 100px;
+    }
+  }
+
+}
+
+.header-phone {
+  margin-left: 120px;
+  margin-right: 62px;
+  font-weight: 600;
+  font-size: 24px;
+  color: $mainTitle;
+  text-decoration: none;
+
+  @include media(900px) {
+    margin-left: 60px;
+    margin-right: 30px;
+  }
+  @include media(767px) {
+    margin-left: 30px;
+    font-size: 20px;
+  }
+}
+
+.header-button {
+  padding: 10px 33px;
+  @include btn();
+
+  @include media(767px) {
+    display: none;
+  }
+}
+
+.header-menu__wrap {
+  z-index: 3;
+  list-style: none;
+}
+
+.header-menu__list {
+  display: flex;
+  align-items: center;
+  @include media(1060px) {
+    display: none;
+  }
+}
+
+.header-menu__el {
+  margin-right: 26px;
+  position: relative;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &._hasSubmenu {
+    &:hover,
+    &:hover .header-submenu {
+      .header-submenu {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+  }
+}
+
+.header-menu__link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: $mainTitle;
+  display: flex;
+  align-items: center;
+
+  & svg {
+    margin-left: 5px;
+  }
+
+  &._action,
+  &:hover {
+    color: $mainRed;
+  }
+}
+
+.header-submenu {
+  transition: opacity 1s ease;
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  top: 40px;
+  width: 320px;
+  margin: 0;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 7px 25px 16px 40px;
+  list-style-image: url("/skin/images/Ellipse 21.svg");
+  @include media(1270px) {
+    left: -50px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 35px;
+    top: -28px;
+    border: 10px solid transparent;
+    border-bottom: 25px solid #fff;
+    @include media(1270px) {
+      left: 80px;
+    }
+  }
+}
+
+.header-submenu._one_el {
+  width: auto;
+  padding: 0 30px 10px;
+}
+
+.header-submenu__el {
+  margin-top: 13px;
+  width: 50%;
+}
+
+.header-submenu__link {
+  text-decoration: none;
+  font-family: $font-family-title;
+  line-height: 16px;
+  color: $mainTitle;
+  cursor: pointer;
+
+  &:hover {
+    color: $mainRed;
+
+  }
+}
+
+.mobile-menu-button {
+  flex-direction: column;
+  height: 30px;
+  justify-content: space-between;
+  cursor: pointer;
+  display: none;
+  @include media(1060px) {
+    display: flex;
+  }
+}
+
+.mobile-button-line {
+  display: inline-block;
+  width: 70px;
+  height: 2px;
+  background: #333;
+
+  @include media(767px) {
+    width: 25px;
+  }
+}
+
+.header-mobile-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-600px);
+  transition: transform 0.5s ease-in;
+  z-index: 3;
+  width: 260px;
+  height: 520px;
+  background: #fff;
+  padding: 30px;
+}
+
+.header-mobile-menu-bg {
+  background: rgba(51, 51, 51, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 100000px;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.header-mobile-top-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-mobile-menu-list {
+  padding: 0;
+  margin-top: 50px;
+  list-style: none;
+}
+
+.header-mobile-menu-el {
+  font-family: $font-family-title;
+  font-size: 26px;
+  line-height: 42px;
+  font-weight: 600;
+  color: $mainTitle;
+}
+
+.header-mobile-submenu {
+  list-style-image: url("/skin/images/Ellipse 21.svg");
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+
+.header-mobile-submenu_el {
+  font-family: $font-family-title;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  width: 50%;
+}
+
+.header-mobile-menu-link,
+.header-mobile-submenu-link {
+  color: $mainTitle;
+  text-decoration: none;
+}
+
+.header-mobile-menu-bottom {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+}
+
+.header-mobile-menu-bottom-button {
+  @include btn();
+  font-size: 20px;
+  padding: 16px 81px;
+
+  &:hover {
+    background: $mainRed;
+  }
+}

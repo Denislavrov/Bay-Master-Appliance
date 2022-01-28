@@ -1,0 +1,83 @@
+.reviews {
+  padding: 250px 0 57px;
+  background: $lightBg;
+  @include media(900px) {
+    padding: 211px 0 37px;
+  }
+  @include media(767px) {
+    padding: 145px 0 27px;
+  }
+}
+
+.reviews-title {
+  font-family: $font-family-title;
+  font-size: 56px;
+  font-weight: 700;
+  color: $mainTitle;
+  line-height: 60px;
+  @include media(900px) {
+    font-size: 52px;
+  }
+  @include media(767px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.reviews-text {
+  line-height: 25px;
+  margin-top: 25px;
+  color: $reviewText;
+  @include media(767px) {
+    font-size: 14px;
+    margin-top: 16px;
+    line-height: 19px;
+  }
+}
+
+.reviews-form {
+  margin: 58px 0 80px;
+  background: url("/skin/images/Rectangle 1038.png") no-repeat 100%;
+  background-size: cover;
+  padding: 53px 0 63px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include media(900px) {
+    margin: 38px 60px;
+    padding: 40px 0 50px;
+  }
+  @include media(767px) {
+    margin: 30px 0 50px;
+    padding: 30px 0 50px;
+  }
+}
+
+.reviews-form-title {
+  font-family: $font-family-title;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 70px;
+  color: $mainRed;
+  @include media(900px) {
+    font-size: 36px;
+  }
+}
+
+.reviews-form-text {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  color: $mainText;
+}
+
+.reviews-star {
+  margin-top: 45px;
+}
+
+.reviews-submit {
+  @include btn();
+  margin-top: 50px;
+  padding: 22px 100px;
+  font-size: 20px;
+}
