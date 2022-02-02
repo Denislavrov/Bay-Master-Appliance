@@ -25,8 +25,8 @@ include($_SERVER['DOCUMENT_ROOT'] . "/html/templates/main/header.tpl.php");
             <div class="about-title">About us</div>
             <div class="about-text">We serve all major appliance types and brands and are prepared for all kinds of issues. Our technicians are trained and experienced. We use the best equipment accurate diagnostic and quick repair. Our team is happy to serve our neighbors in the Bay Area.</div>
             <div class="about-wrap _about">
-                <div class="about-item">Same-day appointments and service</div>
-                <div class="about-item">COVID-19 prepared: masks, gloves and shoe covers</div>
+                <div class="about-item _big-item">Same-day appointments and service</div>
+                <div class="about-item _big-item">COVID-19 prepared: masks, gloves and shoe covers</div>
                 <div class="about-item">Diagnostic Free with repair</div>
                 <div class="about-item">Warranty up to 1 year</div>
                 <div class="about-item">Floor and interior protection equipment</div>

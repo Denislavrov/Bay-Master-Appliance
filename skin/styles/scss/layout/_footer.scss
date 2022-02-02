@@ -106,6 +106,9 @@
   }
 
   &._hasSubmenu {
+    .header-submenu {
+      left: -8px;
+    }
     &:hover,
     &:hover .header-submenu {
       .header-submenu {
@@ -119,6 +122,7 @@
 
 .footer-menu-link {
   color: #fff;
+  font-family: $font-family-thunder;
   cursor: pointer;
   text-decoration: none;
 }
@@ -126,16 +130,20 @@
 .footer-button {
   @include btn;
   background: #fff;
+  font-family: $font-family-thunder;
   color: $mainRed;
   border: none;
   padding: 35px 33px;
   font-size: 20px;
+  transition: background 0.2s ease-in;
 
   &:hover {
     background: #333333;
     color: #fff;
   }
-
+  @include media(1100px) {
+    padding: 35px 63px;
+  }
   @include media(767px) {
     width: 100%;
     margin-top: 50px;

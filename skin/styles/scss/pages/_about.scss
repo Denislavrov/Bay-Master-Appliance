@@ -34,7 +34,7 @@
   }
 
   @include media(767px) {
-      background: url("/skin/images/Rectangle 1076.png") no-repeat -42% 100%,
+      background: url("/skin/images/Rectangle 1076.png") no-repeat -78% 100%,
       url("/skin/images/modern-kitchen-interior.png") no-repeat 100%;
       background-size: 90%, cover;
   }
@@ -59,6 +59,7 @@
   justify-content: space-between;
   @include media(1090px) {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -78,18 +79,22 @@
   width: 50%;
   @include media(1090px) {
     margin-top: 20px;
+    width: 100%;
   }
 }
 
 .about-wrap._about {
-  margin-top: 30px;
+  margin-top: 49px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @include media(767px) {
+    margin-top: 30px;
+  }
 
   & .about-item {
     padding: 0 30px;
-    height: 112px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,9 +102,29 @@
     margin-bottom: 28px;
     font-size: 14px;
     line-height: 19px;
-
+    &._big-item {
+      height: 112px;
+    }
+    @include media(1090px) {
+      width: calc(50% - 105px);
+      height: 70px;
+      order: 0;
+      margin-bottom: 20px;
+      justify-content: flex-start;
+      padding: 0 45px;
+      &._big-item {
+        height: 90px;
+        order: 1;
+      }
+    }
     @include media(767px) {
-      width: 30%;
+      padding: 0 20px;
+      height: 90px;
+      width: calc(50% - 49px);
+      &._big-item {
+        width: 100%;
+        height: 90px;
+      }
     }
   }
 }

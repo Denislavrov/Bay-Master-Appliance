@@ -12,6 +12,11 @@ function toggleMenu() {
     }
 }
 
+function toggleMobileMenu(e) {
+    console.log(e.target);
+    const menu = document.querySelector('.js-header-mob-menu');
+}
+
 
 function toggleForm() {
     const div = document.querySelector('.js-form-hideWrap');
@@ -46,4 +51,38 @@ const swiperHome = new Swiper('.js-swiper-about', {
         nextEl: '.about-slider__next',
         prevEl: '.about-slider__prev',
     },
+});
+
+const swiperTeam = new Swiper('.js-swiper-team', {
+    autoplay: {
+        delay: 5000,
+    },
+    loop: true,
+    grabCursor: true,
+    slidesPerView: 2,
+    roundLengths: true,
+    spaceBetween: 10,
+    resizeObserver: true,
+    navigation: {
+        nextEl: '.team-slider__next',
+        prevEl: '.team-slider__prev',
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 10
+        },
+        600: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        769: {
+            slidesPerView: 4,
+            spaceBetween: 35,
+        },
+        1060: {
+            slidesPerView: 6,
+            spaceBetween: 17
+        }
+    }
 });

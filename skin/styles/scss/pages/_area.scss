@@ -1,6 +1,9 @@
 .area {
   padding: 213px 0 50px;
   background: $lightBg;
+  @include media(767px) {
+    padding: 145px 0 50px;
+  }
 }
 
 .area-title {
@@ -42,12 +45,12 @@
 }
 
 .area-item {
-  width: 30%;
+  width: calc(33% - 16px);
+  min-height: 100%;
   margin-right: 30px;
   margin-bottom: 30px;
   align-self: flex-start;
-  &:nth-child(2),
-  &:nth-child(5) {
+  &:last-child {
     margin-right: 0;
   }
 
@@ -58,15 +61,22 @@
   }
 
   &._big-item {
-    width: calc(66% - 33px);
-    @include media(950px) {
-      width: 30%;
+    width: calc(100% - 33% - 14px);
+    @include media(1020px) {
+      width: calc(100% - 20px);
+      height: auto;
+      min-height: auto;
     }
     @include media(767px) {
       width: 100%;
     }
   }
 
+  @include media(1020px) {
+    width: calc(100% - 20px);
+    height: auto;
+    min-height: auto;
+  }
   @include media(767px) {
     width: 100%;
     margin-right: 0;
@@ -77,6 +87,48 @@
     }
   }
 }
+
+.area-top {
+  width: 100%;
+  min-height: 330px;
+  display: flex;
+
+  & .area-list {
+    height: 253px;
+  }
+  @include media(1020px) {
+    width: 50%;
+    flex-direction: column;
+    & .area-list {
+      height: auto;
+    }
+  }
+  @include media(767px) {
+    width: 100%;
+  }
+}
+
+.area-bottom {
+  width: 100%;
+  min-height: 240px;
+  display: flex;
+
+  & .area-list {
+    height: 163px;
+  }
+
+  @include media(1020px) {
+    width: 50%;
+    flex-direction: column;
+    & .area-list {
+      height: auto;
+    }
+  }
+  @include media(767px) {
+    width: 100%;
+  }
+}
+
 .area-list {
   background: #fff;
   padding: 27px 50px 50px;
@@ -100,28 +152,46 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding-left: 15px;
-  list-style-image: url("/skin/images/Ellipse 146.png");
+  padding-left: 36px;
+  list-style: none;
+  @include media(1020px) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
   @include media(767px) {
     flex-direction: column;
   }
 }
 
 .area-list-item {
+  position: relative;
   width: 100%;
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 10px;
+  color: $reviewText;
+  &:before {
+    content: '';
+    background: url("/skin/images/Ellipse 146.png");
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 7px;
+    left: -37px;
+  }
+  @include media(767px) {
+    width: 100%;
+    font-size: 14px;
+  }
 }
 
 .area-item._big-item .area-list-item {
   width: 50%;
-  @include media(767px) {
+  @include media(1020px) {
     width: 100%;
   }
-}
-.area-list-item {
-  font-size: 16px;
-  line-height: 25px;
-  margin-top: 10px;
   @include media(767px) {
+    width: 100%;
     font-size: 14px;
   }
 }

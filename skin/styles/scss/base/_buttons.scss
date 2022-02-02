@@ -5,6 +5,7 @@
   background: $mainRed;
   cursor: pointer;
   border: none;
+  transition: background 0.2s ease;
 
   &:hover {
     background: $redButtonHover;

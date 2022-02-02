@@ -34,10 +34,10 @@
   }
 
   @include media(767px) {
-    background: url("/skin/images/Rectangle 1076.png") no-repeat -42% 100%,
+    background: url("/skin/images/Rectangle 1076.png") no-repeat -126% 100%,
+    linear-gradient(180deg, #F9F9F9 0%, rgba(255, 255, 255, 0) 100%),
     url("/skin/images/modern-kitchen-interior-with-furniture-stylish-kitchen-interior-with-yellow-wall-3d-rendering 1.png") no-repeat 100%;
-
-    background-size: 90%, cover;
+    background-size: 90%, cover, cover;
   }
 }
 
@@ -66,7 +66,6 @@
   @include media(767px) {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 20px;
     width: 85%;
   }
 }
@@ -89,7 +88,6 @@
     padding-top: 30px;
     font-size: 14px;
     line-height: 20px;
-    padding-left: 20px;
     width: 100%;
   }
 }
@@ -109,10 +107,6 @@
   @include btn();
   padding: 16px 51px;
   font-size: 20px;
-
-  @include media(767px) {
-    margin-left: 20px;
-  }
 }
 
 .service-link {
@@ -120,8 +114,8 @@
   margin-left: 56px;
 
   @include media(767px) {
-    margin-left: 20px;
     margin-top: 40px;
+    margin-left: 0;
     display: block;
   }
 }
@@ -177,14 +171,15 @@
 }
 
 .repair-item {
-  width: 22%;
-  margin-right: 29px;
+  width: calc(25% - 20px);
+  margin-right: 26px;
   margin-bottom: 25px;
   background: $lightBg;
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  transition: background 0.2s ease-in;
 
   &:nth-child(4n + 4){
     margin-right: 0;
@@ -202,7 +197,7 @@
   }
 
   @include media(860px) {
-    width: 45%;
+    width: calc(50% - 15px);
     &:nth-child(4n + 4){
       margin-right: 29px;
     }
@@ -224,6 +219,7 @@
 }
 
 .repair-item-title {
+  color: $mainTitle;
   margin-top: 40px;
   text-align: center;
   font-family: $font-family-title;
@@ -306,14 +302,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @include media(840px){
+  @include media(767px){
     flex-wrap: nowrap;
     flex-direction: column;
   }
 }
 
 .services-how-work-option {
-  width: 48%;
+  width: calc(50% - 20px);
   display: flex;
   margin-bottom: 30px;
   align-items: center;
@@ -323,7 +319,10 @@
   }
 
   @include media(840px){
-   width: 100%;
+    width: calc(50% - 15px);
+  }
+  @include media(767px){
+    width: 100%;
   }
 }
 
@@ -350,7 +349,9 @@
   @include media(1137px) {
     height: 150px;
   }
-
+  @include media(840px){
+    padding: 0 30px;
+  }
   @include media(767px) {
     padding: 0 25px;
   }
@@ -381,10 +382,11 @@
   }
 }
 .form-left {
+
   background: url("/skin/images/Group 1048.png") no-repeat 100%;
   padding: 50px 92px 50px 80px;
   min-width: calc(600px - 92px - 80px);
-  background-size: cover;
+  background-size: 100% 100%;
   position: relative;
 
   @include media(1100px) {
@@ -429,13 +431,14 @@
     line-height: 2;
     font-size: 14px;
     cursor: pointer;
-    padding-left: 30px;
+    padding-left: 40px;
 
     &:before {
       content: "";
       display: block;
       position: absolute;
       top: 2px;
+      background: #fff;
       left: 0;
       width: 24px;
       height: 24px;
@@ -461,14 +464,14 @@
     padding: 70px 30px 70px 30px;
   }
   @include media(870px) {
-    background: url("/skin/images/Rectangle 982.png") no-repeat 100%;
+    background: url("/skin/images/Group 1101.png") no-repeat 100%;
     background-size: cover;
     padding: 41px 130px 100px;
     position: relative;
   }
 
   @include media(767px) {
-    background: url("/skin/images/Rectangle 982.png") no-repeat 91%;
+    background: url("/skin/images/Group 1101.png") no-repeat 99%;
     background-size: cover;
     padding: 30px 30px 120px;
   }
@@ -494,7 +497,7 @@
         margin-bottom: 50px;
       }
       @include media(767px) {
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         font-size: 14px;
         line-height: 22px;
       }
@@ -526,6 +529,10 @@
   padding: 18px 25px;
   margin-top: 10px;
   border: none;
+  color: $mainTitle;
+  &::placeholder {
+    color: $mainTitle;
+  }
 
   &:first-child {
     margin-top: 0;
@@ -679,7 +686,7 @@
   &:before {
     content: '';
     position: absolute;
-    width: 9px;
+    width: 6px;
     min-height: 100%;
     height: 100%;
     background: $mainRed;
@@ -695,6 +702,7 @@
   font-weight: 700;
   line-height: 60px;
   min-width: 20%;
+  color: $mainTitle;
   @include media(767px) {
     font-size: 46px;
   }
@@ -813,9 +821,11 @@
   color: $reviewText;
   line-height: 25px;
   margin-top: 25px;
+  font-size: 16px;
   @include media(767px) {
     font-size: 14px;
     max-width: 270px;
+    margin-top: 4px;
   }
 }
 
@@ -830,6 +840,7 @@
   }
   @include media(767px) {
     padding: 17px 41px;
+    margin-top: 30px;
   }
 }
 
@@ -847,17 +858,18 @@
 }
 
 .review-item {
-  width: 490px;
+  width: calc(50% - 110px);
   background: #fff;
   margin-right: 40px;
   margin-top: 40px;
   padding: 45px ;
   @include media(1140px) {
-    width: 29%;
+    width: calc(50% - 78px);
     padding: 45px 29px;
   }
   @include media(767px) {
-    width: 90%;
+    width: calc(100% - (38px * 2));
+    padding: 37px 38px 91px;
     margin-right: 0;
   }
 
@@ -888,6 +900,8 @@
   margin-top: 24px;
   font-size: 14px;
   line-height: 22px;
+  color: #5F5F5F;
+
 }
 
 .review-person-icon {
