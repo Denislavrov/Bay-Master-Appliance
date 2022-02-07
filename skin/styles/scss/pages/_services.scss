@@ -136,6 +136,7 @@
 .service-repair-title {
   font-family: $font-family-title;
   font-size: 56px;
+  line-height: 60px;
   font-weight: 700;
   color: $mainTitle;
   text-align: center;
@@ -145,6 +146,7 @@
   }
   @include media(767px) {
     font-size: 36px;
+    line-height: 36px;
   }
 }
 
@@ -341,10 +343,31 @@
 }
 
 .services-how-work-text-block {
-  background: #fff;
+  background-color: #fff;
   min-height: 130px;
   height: 130px;
   padding: 0 60px;
+
+  &._block-one {
+    background-image: url("/skin/images/Subtract1.png");
+    background-repeat: no-repeat;
+    background-position: 75% 103%;
+  }
+  &._block-two {
+    background-image: url("/skin/images/Subtract2.png");
+    background-repeat: no-repeat;
+    background-position: 75% 103%;
+  }
+  &._block-three {
+    background-image: url("/skin/images/Subtract3.png");
+    background-repeat: no-repeat;
+    background-position: 75% 103%;
+  }
+  &._block-four {
+    background-image: url("/skin/images/Subtract4.png");
+    background-repeat: no-repeat;
+    background-position: 75% 103%;
+  }
 
   @include media(1137px) {
     height: 150px;
@@ -383,7 +406,7 @@
 }
 .form-left {
 
-  background: url("/skin/images/Group 1048.png") no-repeat 100%;
+  background: url("/skin/images/Group 1033form.png") no-repeat;
   padding: 50px 92px 50px 80px;
   min-width: calc(600px - 92px - 80px);
   background-size: 100% 100%;
@@ -521,6 +544,10 @@
   }
 }
 
+.main-form-input._first {
+  margin-top: 0 !important;
+}
+
 .main-form-input,
 .main-form-button {
   width: 100%;
@@ -532,10 +559,6 @@
   color: $mainTitle;
   &::placeholder {
     color: $mainTitle;
-  }
-
-  &:first-child {
-    margin-top: 0;
   }
 
   &._small {

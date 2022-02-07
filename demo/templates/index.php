@@ -106,7 +106,7 @@ include($_SERVER['DOCUMENT_ROOT'] . "/html/templates/main/header.tpl.php");
             <div class="form-right">
                 <div class="main-form-title">Leave your application right now</div>
                 <div class="main-form-text">Complete the form, and we'll call you back soon</div>
-                <input class="main-form-input" type="text" placeholder="Name*"/>
+                <input class="main-form-input _first" type="text" placeholder="Name*"/>
                 <input class="main-form-input" type="text" placeholder="Phone number*"/>
                 <div class="main-form-subwrap js-form-hideWrap">
                     <div class="main-form-line">
