@@ -19,13 +19,16 @@ function toggleMobileMenu(e) {
 
 
 function toggleForm() {
+    const form = document.querySelector('.js-form-block');
     const div = document.querySelector('.js-form-hideWrap');
     const check = document.querySelector('.js-check-more');
     const checkMob = document.querySelector('.js-check-more-mobile');
     if (check.checked || checkMob.checked) {
         div.style.display = 'block';
+        form.classList.add('_longForm');
     } else {
         div.style.display = 'none';
+        form.classList.remove('_longForm');
     }
 }
 

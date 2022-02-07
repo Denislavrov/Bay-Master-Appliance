@@ -398,6 +398,11 @@
 .main-form {
   display: flex;
   background: #fff;
+  max-height: 546px;
+
+  &._longForm .form-left {
+    background: url("/skin/images/Group 1033form.png") no-repeat 0 0;
+  }
 
   @include media(870px) {
     justify-content: center;
@@ -405,11 +410,10 @@
   }
 }
 .form-left {
-
-  background: url("/skin/images/Group 1033form.png") no-repeat;
+  background: url("/skin/images/Group 1033form.png") no-repeat 100% 96%;
   padding: 50px 92px 50px 80px;
   min-width: calc(600px - 92px - 80px);
-  background-size: 100% 100%;
+  background-size: cover;
   position: relative;
 
   @include media(1100px) {
@@ -628,14 +632,16 @@
 }
 
 .about-left {
-  max-width: 43%;
+  width: 43%;
+  max-width: 480px;
   @include media(925px) {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
 .about-right {
   width: 50%;
+  max-width: 580px;
   @include media(925px) {
     width: 100%;
     margin-top: 30px;
@@ -653,6 +659,7 @@
 
 .about-img-button {
   @include btn();
+  font-family: $font-family-thunder;
   width: 100%;
   padding: 36px 0;
   font-size: 20px;
@@ -704,7 +711,7 @@
   align-items: center;
   margin-bottom: 10px;
   position: relative;
-  padding: 20px 30px;
+  padding: 20px 40px;
 
   &:before {
     content: '';
@@ -746,6 +753,7 @@
 
 .about-button {
   @include btn();
+  font-family: $font-family-thunder;
   background: $lightBg;
   color: $mainTitle;
   font-size: 20px;

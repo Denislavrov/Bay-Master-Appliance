@@ -68,21 +68,21 @@
 .contacts-desk-img {
   display: block;
   @include media(1060px) {
-    display: none;
+    display: block;
   }
   @include media(767px) {
-    display: block;
-    max-width: 130px;
+    display: none;
   }
 }
 
 .contacts-mobile-img {
   display: none;
   @include media(1060px) {
-    display: block;
+    display: none;
   }
   @include media(767px) {
-    display: none;
+    display: block;
+    max-width: 130px;
   }
 }
 

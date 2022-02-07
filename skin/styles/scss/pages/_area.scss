@@ -11,6 +11,7 @@
   font-weight: 700;
   font-size: 56px;
   line-height: 60px;
+  color: $mainTitle;
   @include media(950px) {
     font-size: 52px;
   }
