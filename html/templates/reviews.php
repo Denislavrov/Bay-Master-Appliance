@@ -9,7 +9,7 @@ include($_SERVER['DOCUMENT_ROOT'] . "/html/templates/main/header.tpl.php");
             <div class="reviews-title">What our clients say</div>
             <div class="reviews-text">We always keep promises and bring things to an end. Your review will be next.</div>
         </div>
-        <form action="#" class="reviews-form">
+        <form action="#" class="reviews-form§">
             <div class="reviews-form-title">Rate your experience with us</div>
             <div class="reviews-form-text">What our clients say</div>
             <div class="reviews-star">

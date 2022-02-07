@@ -163,7 +163,7 @@ include($_SERVER['DOCUMENT_ROOT'] . "/html/templates/main/header.tpl.php");
 </section>
 <section class="about-form">
     <div class="layout-main">
-        <form action="" class="main-form">
+        <form action="" class="main-form js-form-block">
             <div class="form-left">
                 <div class="main-form-title">Leave your application right now</div>
                 <div class="main-form-text">Complete the form, and we'll call you back soon</div>
