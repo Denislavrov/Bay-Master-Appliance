@@ -43,7 +43,7 @@
   @include media(767px) {
     margin-left: 25px;
     margin-right: 38px;
-    font-size: 20px;
+    font-size: 14px;
   }
 }
 
@@ -165,7 +165,7 @@
 
 .header-submenu__link {
   text-decoration: none;
-  font-family: $font-family-thunder;
+  font-family: $font-family-title;
   line-height: 16px;
   color: $mainTitle;
   cursor: pointer;

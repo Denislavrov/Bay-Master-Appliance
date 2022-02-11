@@ -163,6 +163,7 @@
   }
   @include media(767px) {
     font-size: 14px;
+    max-width: 280px;
   }
 }
 
@@ -170,6 +171,9 @@
   margin-top: 65px;
   display: flex;
   flex-wrap: wrap;
+  @include media(767px) {
+    margin-top: 40px;
+  }
 }
 
 .repair-item {
@@ -295,6 +299,8 @@
 
   @include media(767px) {
     text-align: center;
+    max-width: 240px;
+    font-size: 14px;
   }
 }
 
@@ -307,6 +313,7 @@
   @include media(767px){
     flex-wrap: nowrap;
     flex-direction: column;
+    margin-top: 35px;
   }
 }
 
@@ -339,6 +346,9 @@
   @include media(1137px) {
     height: 150px;
     min-width: 60px;
+  }
+  @include media(767px) {
+    min-width: 50px;
   }
 }
 
@@ -655,6 +665,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include media(767px) {
+    height: 260px;
+
+    svg {
+      width: 131px;
+    }
+  }
 }
 
 .about-img-button {
