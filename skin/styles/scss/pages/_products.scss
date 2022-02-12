@@ -377,3 +377,76 @@
     padding: 50px 0;
   }
 }
+
+.product-recommendation {
+  padding-bottom: 76px;
+}
+
+.recommendation-text-block {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 52px;
+}
+
+.recommendation-title {
+  font-family: $font-family-title;
+  font-size: 56px;
+  line-height: 60px;
+  color: $mainTitle;
+  max-width: 480px;
+  margin-right: 140px;
+}
+
+.recommendation-text {
+  max-width: 400px;
+  color: $reviewText;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.recommendation-content {
+  display: flex;
+}
+
+.recommendation-list {
+  max-width: 535px;
+  margin-right: 84px;
+  font-size: 16px;
+  line-height: 27px;
+  color: $reviewText;
+  list-style: none;
+}
+
+.recommendation-item {
+  position: relative;
+  position: relative;
+  &:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: $reviewText;
+    position: absolute;
+    border-radius: 50%;
+    left: -40px;
+    top: 8px;
+  }
+}
+
+.recommendation-warning {
+  padding: 131px 73px 93px;
+  background: $lightBg;
+  color: $mainRed;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  max-height: 96px;
+
+  &:before {
+    content: '';
+    background-image: url("/skin/images/Vector_81.svg");
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 93px;
+  }
+}

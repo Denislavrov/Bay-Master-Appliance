@@ -216,6 +216,33 @@ include($_SERVER['DOCUMENT_ROOT'] . "/html/templates/main/header.tpl.php");
     </div>
 </section>
 
+<section class="product-recommendation">
+    <div class="layout-main">
+        <div class="recommendation-text-block">
+            <div class="recommendation-title">Refrigerator Maintenance Recommendations</div>
+            <div class="recommendation-text">There are easy fridge maintenance (not repair) procedures you can perform yourself at home:</div>
+        </div>
+        <div class="recommendation-content">
+            <ul class="recommendation-list">
+                <li class="recommendation-item">
+                    When it comes to your kitchen machines, don't hesitate! Give us a call, and we'll have the specialists onsite within 24 hours. You only need to give us some details about what needs fixing.
+                </li>
+                <li class="recommendation-item">
+                    From there, our team will do all the work for you so that everything goes back in its place quickly and efficiently. When you require a dependable company to take care of your appliances, we're here to assist.
+                </li>
+                <li class="recommendation-item">
+                    Contact us right away, and we'll be in your kitchen that same day. You won't have to waste any time or hesitate; our crew will manage everything for you!
+                </li>
+            </ul>
+            <div class="recommendation-warning">
+                NEVER try to repair your fridge yourself. Our techs have been trained for years to be qualified to
+                handle refrigerants. Follow the user’s manual and recommendations, but when a problem happens the best
+                idea is to call Master Appliances service.
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="services-review">
     <div class="layout-main">
         <div class="review-top">
