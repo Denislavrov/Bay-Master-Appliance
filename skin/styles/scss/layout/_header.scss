@@ -202,13 +202,16 @@
   position: absolute;
   top: 0;
   right: 0;
-  transform: translateY(-600px);
+  transform: translateY(-1000px);
   transition: transform 0.5s ease-in;
   z-index: 3;
   width: 260px;
   height: 520px;
   background: #fff;
   padding: 30px;
+  @include media(767px) {
+    height: calc(100vh - 60px);
+  }
 }
 
 .header-mobile-menu-bg {
@@ -246,6 +249,10 @@
   flex-wrap: wrap;
   padding: 0 10px;
   margin: 10px 0;
+
+  &._openMenu {
+    display: flex;
+  }
 }
 
 .header-mobile-submenu_el {
@@ -276,4 +283,11 @@
   &:hover {
     background: $mainRed;
   }
+}
+
+.handle-menu-item {
+  background: url("/skin/images/arrow.svg") no-repeat;
+  display: inline-block;
+  width: 18px;
+  height: 15px;
 }

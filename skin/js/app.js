@@ -5,18 +5,30 @@ function toggleMenu() {
     const bg = document.querySelector('.js-mobile-menu-bg');
     if (bg.style.display === 'block' && menu.style.transform === 'translateY(0px)') {
         bg.style.display = 'none';
-        menu.style.transform = 'translateY(-600px)';
+        menu.style.transform = 'translateY(-1000px)';
     } else {
         bg.style.display = 'block';
         menu.style.transform = 'translateY(0px)';
     }
 }
 
-function toggleMobileMenu(e) {
-    console.log(e.target);
-    const menu = document.querySelector('.js-header-mob-menu');
+window.onload = function() {
+    const menu = document.querySelectorAll('.js-header-mob-menu');
+    const buttons = document.querySelectorAll('.js-menuHandle');
+    buttons.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+            for (let i = 0; i < menu.length; i++) {
+                if (menu[i].dataset.attr === e.target.dataset.attr) {
+                    if (menu[i].classList.contains('_openMenu')) {
+                        menu[i].classList.remove('_openMenu');
+                    } else {
+                        menu[i].classList.add('_openMenu');
+                    }
+                }
+            }
+        })
+    })
 }
-
 
 function toggleForm() {
     const form = document.querySelector('.js-form-block');

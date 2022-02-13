@@ -85,15 +85,13 @@
                                 <path d="M14.9956 30.0013C13.0258 30.0033 11.0749 29.6167 9.2547 28.8635C7.43446 28.1104 5.78058 27.0056 4.38772 25.6123C2.99485 24.2191 1.89036 22.5647 1.13746 20.7439C0.384561 18.9231 -0.00196525 16.9717 7.51352e-06 15.0013V14.7013C0.0600024 11.7604 0.98266 8.90203 2.65331 6.48135C4.32396 4.06068 6.66893 2.18447 9.39678 1.08591C12.1246 -0.0126471 15.1151 -0.285113 17.9965 0.302377C20.8779 0.889867 23.5231 2.31141 25.6035 4.39032C27.7024 6.48814 29.132 9.16167 29.7114 12.0725C30.2907 14.9834 29.9937 18.0008 28.858 20.7428C27.7223 23.4847 25.7989 25.8281 23.3313 27.4762C20.8637 29.1243 17.9627 30.0031 14.9956 30.0013ZM14.9956 17.1163L18.8795 21.0013L20.9938 18.8863L17.11 15.0013L20.9938 11.1163L18.8795 9.00132L14.9956 12.8863L11.1117 9.00132L8.99736 11.1163L12.8812 15.0013L8.99736 18.8863L11.1117 21.0013L14.9956 17.1178V17.1163Z" fill="#A63A42"/>
                             </svg>
                         </div>
-                        <ul class="header-mobile-menu-list">
-                            <li class="header-mobile-menu-el hasMobileSubmenu" onclick="toggleMobileMenu()">
+                        <ul class="header-mobile-menu-list js-mobile-list">
+                            <li class="header-mobile-menu-el hasMobileSubmenu">
                                 <a href="#" class="header-mobile-menu-link">
                                     Services
-                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 8L0.669875 0.5L9.33013 0.500001L5 8Z" fill="#333333"/>
-                                    </svg>
                                 </a>
-                                <ul class="header-mobile-submenu js-header-mob-menu">
+                                <span class="js-menuHandle handle-menu-item" data-attr="1"></span>
+                                <ul class="header-mobile-submenu js-header-mob-menu" data-attr="1">
                                     <li class="header-mobile-submenu_el">
                                         <a href="#" class="header-mobile-submenu-link">Refrigerators</a>
                                     </li>
@@ -123,11 +121,9 @@
                             <li class="header-mobile-menu-el hasMobileSubmenu">
                                 <a href="#" class="header-mobile-menu-link">
                                     About us
-                                    <svg width="20" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 8L0.669875 0.5L9.33013 0.500001L5 8Z" fill="#333333"/>
-                                    </svg>
                                 </a>
-                                <ul class="header-mobile-submenu js-header-mob-menu">
+                                <span class="js-menuHandle handle-menu-item" data-attr="2"></span>
+                                <ul class="header-mobile-submenu js-header-mob-menu" data-attr="2">
                                     <li class="header-mobile-submenu_el">
                                         <a href="#" class="header-mobile-submenu-link">Reviews</a>
                                     </li>
