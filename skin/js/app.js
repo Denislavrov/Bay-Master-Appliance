@@ -46,6 +46,24 @@ window.onload = function() {
         })
     })
 
+    modalHandler();
+}
+
+function modalHandler() {
+    const modal = document.querySelector('.js-modal-wrap');
+    const modalBg = document.querySelector('.js-modal-bg');
+    const close = document.querySelector('.js-modal-close');
+
+    modalBg.addEventListener('click', () => modalControl());
+    close.addEventListener('click', () => modalControl());
+
+    function modalControl() {
+        if (modal.classList.contains('_open')) {
+            modal.classList.remove('_open');
+        } else {
+            modal.classList.add('_open');
+        }
+    }
 }
 
 function toggleForm() {

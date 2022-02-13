@@ -37,7 +37,7 @@
 
 .reviews-form {
   margin: 58px 0 60px;
-  background: url("/skin/images/Group 1049.png") no-repeat 100%;
+  background: url("/skin/images/Group 1049.png") no-repeat 100% 100%;
   background-size: cover;
   padding: 53px 0 63px;
   display: flex;
@@ -48,10 +48,11 @@
     padding: 40px 0 50px;
   }
   @include media(767px) {
-    background: url("/skin/images/review_form_mob.png") no-repeat 100%;
+    background: url("/skin/images/review_form_mob.png") no-repeat 100% 100%;
     margin: 30px 0 50px;
     padding: 30px 30px 88px;
     align-items: flex-start;
+    background-size: cover;
   }
 }
 

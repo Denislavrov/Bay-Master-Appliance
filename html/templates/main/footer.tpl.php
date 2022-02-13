@@ -140,9 +140,9 @@
     </div>
 </footer>
 
-<div id="review-popup" style="display: none;">
-	<?php include($_SERVER['DOCUMENT_ROOT'] . "/html/templates/review.tpl.php") ?>
-</div>
+<?php
+include($_SERVER['DOCUMENT_ROOT'] . "/html/templates/modals/cupon.php");
+?>
 
 </div><?php //.main-container?>
 <?php include($_SERVER['DOCUMENT_ROOT'] . "/html/templates/footer.tpl.php") ?>

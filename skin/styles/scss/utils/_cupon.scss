@@ -1,0 +1,98 @@
+.gift-wrap {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+
+  &._open {
+    display: block;
+  }
+}
+
+.gift-bg {
+  position: absolute;
+  background: rgba(51, 51, 51, 0.8);
+  width: 100%;
+  height: 100vh;
+}
+
+.gift-content {
+  width: 688px;
+  height: 280px;
+  background: url("/skin/images/gift_modal.png") no-repeat 100% 100%;
+  position: absolute;
+  top: calc(50vh - 192px);
+  left: calc(50% - 344px);
+  z-index: 2;
+  padding: 49px 0 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include media(767px) {
+    width: 315px;
+    height: 274px;
+    top: calc(50vh - 185px);
+    left: calc(50% - 155px);
+    padding: 37px 0 68px;
+  }
+}
+
+.gift-title {
+  font-size: 46px;
+  line-height: 73px;
+  color: $mainRed;
+  font-family: $font-family-title;
+  align-items: center;
+  margin-bottom: 10px;
+
+  @include media(767px) {
+    font-size: 44px;
+    margin-bottom: 6px;
+  }
+}
+
+.gift-text {
+  max-width: 340px;
+  font-size: 14px;
+  line-height: 22px;
+  color: $mainText;
+  text-align: center;
+  margin-bottom: 41px;
+
+  @include media(767px) {
+    font-size: 12px;
+    margin-bottom: 37px;
+    max-width: 214px;
+  }
+}
+
+.gift-button {
+  color: #fff;
+  font-weight: 400;
+  background: $mainRed;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease;
+  font-family: $font-family-thunder;
+  font-size: 20px;padding: 22px 0;
+  width: 250px;
+  margin-bottom: 33px;
+
+  &:hover {
+    background: $redButtonHover;
+  }
+
+  @include media(767px) {
+    max-width: 230px;
+    margin-bottom: 31px;
+  }
+}
+
+.gift-close {
+  background: transparent;
+  border: none;
+  color: $mainTitle;
+  font-size: 20px;
+  font-family: $font-family-thunder;
+  cursor: pointer;
+}
