@@ -221,6 +221,9 @@
 
 .team {
   padding: 80px 0;
+  @include media(950px) {
+    padding: 60px 0;
+  }
   @include media(767px) {
     padding: 50px 0;
   }
@@ -344,7 +347,7 @@
   @include media(1060px) {
     background: url("/skin/images/Group 1050.png") no-repeat 100% 85%;
     width: 688px;
-    margin: 80px auto 0;
+    margin: 36px auto 0;
     justify-content: space-between;
     background-size: cover;
   }

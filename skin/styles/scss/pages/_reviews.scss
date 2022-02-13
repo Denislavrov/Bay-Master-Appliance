@@ -48,8 +48,10 @@
     padding: 40px 0 50px;
   }
   @include media(767px) {
+    background: url("/skin/images/review_form_mob.png") no-repeat 100%;
     margin: 30px 0 50px;
-    padding: 30px 0 50px;
+    padding: 30px 30px 88px;
+    align-items: flex-start;
   }
 }
 
@@ -62,6 +64,9 @@
   @include media(900px) {
     font-size: 36px;
   }
+  @include media(767px) {
+    line-height: 36px;
+  }
 }
 
 .reviews-form-text {
@@ -69,10 +74,20 @@
   font-size: 14px;
   line-height: 22px;
   color: $mainText;
+  @include media(767px) {
+   margin-top: 15px;
+   max-width: 60%;
+  }
 }
 
 .reviews-star {
   margin-top: 45px;
+  @include media(767px) {
+    margin-top: 24px;
+    & svg {
+      width: 48px;
+    }
+  }
 }
 
 .reviews-submit {
@@ -81,4 +96,8 @@
   margin-top: 50px;
   padding: 22px 100px;
   font-size: 20px;
+  @include media(767px) {
+    padding: 22px 107px;
+    margin-top: 24px;
+  }
 }

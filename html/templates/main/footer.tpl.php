@@ -79,6 +79,61 @@
                     </li>
                 </div>
             </nav>
+            <nav class="footer-menu-mobile">
+                    <li class="footer-menu-el _hasSubmenu">
+                        <a href="" class="footer-menu-link">
+                            Services
+                        </a>
+                        <span class="js-mobileHandle-footer mobile-handle-footer" data-attr="footer-1"></span>
+                    </li>
+                    <li class="footer-menu-el">
+                        <a href="" class="footer-menu-link">
+                            Contacts
+                        </a>
+                    </li>
+                    <ul class="header-submenu-mobile js-footer-mob-menu" data-attr="footer-1">
+                        <li class="header-submenu__el">
+                            <a href="/" class="header-submenu__link">Refrigerators</a>
+                        </li>
+                        <li class="header-submenu__el">
+                            <a href="/" class="header-submenu__link">Ovens | Microwave</a>
+                        </li>
+                        <li class="header-submenu__el">
+                            <a href="/" class="header-submenu__link">Ranges | Cooktops</a>
+                        </li>
+                        <li class="header-submenu__el">
+                            <a href="/" class="header-submenu__link">Dishwashers</a>
+                        </li>
+                        <li class="header-submenu__el">
+                            <a href="/" class="header-submenu__link">Washers</a>
+                        </li>
+                        <li class="header-submenu__el">
+                            <a href="/" class="header-submenu__link">Dryers</a>
+                        </li>
+                        <li class="header-submenu__el">
+                            <a href="/" class="header-submenu__link">Stackable</a>
+                        </li>
+                        <li class="header-submenu__el">
+                            <a href="/" class="header-submenu__link">Garbage disposals</a>
+                        </li>
+                    </ul>
+                    <li class="footer-menu-el _hasSubmenu">
+                        <a href="" class="footer-menu-link">
+                            About us
+                        </a>
+                        <span class="js-mobileHandle-footer mobile-handle-footer" data-attr="footer-2"></span>
+                    </li>
+                    <li class="footer-menu-el">
+                        <a href="" class="footer-menu-link">
+                            Areas
+                        </a>
+                    </li>
+                    <ul class="header-submenu-mobile js-footer-mob-menu _one_el" data-attr="footer-2">
+                        <li class="header-submenu__el">
+                            <a href="/" class="header-submenu__link">Reviews</a>
+                        </li>
+                    </ul>
+            </nav>
             <button class="footer-button">Request services</button>
         </div>
         </div>

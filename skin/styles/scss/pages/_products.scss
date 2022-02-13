@@ -370,6 +370,11 @@
     @include media(870px) {
       background: transparent;
     }
+
+    & .main-form-input,
+    & .main-form-button {
+      background: #fff;
+    }
   }
 
   padding: 80px 0;

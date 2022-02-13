@@ -28,6 +28,24 @@ window.onload = function() {
             }
         })
     })
+
+    const menuFooter = document.querySelectorAll('.js-footer-mob-menu');
+    const buttonsFooter = document.querySelectorAll('.js-mobileHandle-footer');
+
+    buttonsFooter.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+            for (let i = 0; i < menuFooter.length; i++) {
+                if (menuFooter[i].dataset.attr === e.target.dataset.attr) {
+                    if (menuFooter[i].classList.contains('_openFooterMenu')) {
+                        menuFooter[i].classList.remove('_openFooterMenu');
+                    } else {
+                        menuFooter[i].classList.add('_openFooterMenu');
+                    }
+                }
+            }
+        })
+    })
+
 }
 
 function toggleForm() {
