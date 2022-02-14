@@ -1,3 +1,8 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  font-synthesis: none;
+}
+
 .service-main {
   width: 100%;
   background: url("/skin/images/pngegg 1.png") no-repeat 90%,
@@ -531,7 +536,7 @@
   }
 
   @include media(767px) {
-    background: url("/skin/images/Group 1101.png") no-repeat 99%;
+    background: url("/skin/images/Group 1101.png") no-repeat 99% 100%;
     background-size: cover;
     padding: 30px 30px 120px;
   }
